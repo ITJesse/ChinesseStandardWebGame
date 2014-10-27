@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>屠龙宝刀点击就送</title>
+<meta charset="utf-8">
+<script>
+    var c = ["碧空之歌（这是把剑）","夜色之末（这是个披风）","梦境之末（也许是个武器","泰兰德的记忆（酷炫的饰品）","临风之心（某人掉的饰品）","死亡裁决（近战的饰品）","死亡的统治（法系的饰品）","死亡意志（近战饰品）","不屈之傲（T的饰品）","黑女巫的悔恨（T的武器）"];
+    alert("欢迎加入游戏")
+    var j = 1;
+    for(var i = 1; i < 10; i++){
+        var a = confirm("任务-"+i+"\n是否接受任务");
+        if(a){
+            alert("完成任务,升到" + (++j) + "级,自动寻路到下一个任务");
+        }else{
+            alert("任务失败,新手奖励获得失败经验\n恭喜升到"+ (++j) + "级自动寻路到下一个任务")
+        }
+        if(Math.random()<0.3){
+            alert("获得无双神装"+c[Math.floor(Math.random()*c.length)])
+        }
+    }
+   var b = confirm("新手奖励期已过,充值可延长新手期,是否充值?")
+   if(b){
+        window.location.href = "http://home.alipay.com/bank/paymentOnlineBank.htm";
+   }else{
+        alert("恭喜你度过新手期,接下来的旅途请再接再励,下一个任务需要你自己寻找了哦~88")
+   }
+</script>
+</head>
+<body>
+<p>当前在线玩家数:312101</p>
+</body>
+</html>
